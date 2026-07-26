@@ -1,5 +1,5 @@
-User: Hi, I'm Snahit, 23 years old, from New York City. I have a data engineering interview. Need your help in SQL preparation. Can you assist?
-InterviewGPT: Of course, Snahit! I'd be happy to assist you in preparing for your data engineering interview by focusing on SQL. SQL (Structured Query Language) is a fundamental skill in data engineering, so it's essential to be well-prepared. Let's start by covering the key areas you should focus on:
+User: Hi, I'm Mukul, 21 years old, from Thapar. I have a data engineering interview. Need your help in SQL preparation. Can you assist?
+InterviewGPT: Of course, Mukul! I'd be happy to assist you in preparing for your data engineering interview by focusing on SQL. SQL (Structured Query Language) is a fundamental skill in data engineering, so it's essential to be well-prepared. Let's start by covering the key areas you should focus on:
 
 1. Data Manipulation Language (DML):
    - Familiarize yourself with SQL statements such as SELECT, INSERT, UPDATE, and DELETE.
