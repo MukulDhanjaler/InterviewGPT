@@ -19,8 +19,8 @@ st.set_page_config(page_title="IntervewGPT", page_icon=":brain:", layout="wide")
 
 
 # --- USER AUTHENTICATION ---
-names = ["snehit", "vaddi"]
-usernames = ["snehit", "vaddi"]
+names = ["mukul", "vaddi"]
+usernames = ["mukul", "vaddi"]
 
 # load hashed passwords
 file_path = Path(__file__).parent / "hashed_pw.pkl"
