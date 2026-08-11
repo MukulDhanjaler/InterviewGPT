@@ -1,11 +1,7 @@
 websockets
-base64
-asyncio
-json
-pyaudio
+groq
 pandas
 plotly-express
 streamlit
-streamlit-authenticator
+streamlit-authenticator==0.2.3
 spacy
-groq
