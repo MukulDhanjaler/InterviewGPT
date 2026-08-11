@@ -31,9 +31,15 @@ except ImportError:
 # emojis: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="InterviewGPT", page_icon="🧠", layout="wide")
 
-# --- API KEYS from environment variables ---
-GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-ASSEMBLY_AI_API_KEY = os.environ.get("ASSEMBLY_AI_API_KEY", "")
+# --- API KEYS: check st.secrets (HF Spaces / Streamlit Cloud) then env vars (Render/local) ---
+def _get_secret(key: str) -> str:
+    try:
+        return st.secrets[key]
+    except Exception:
+        return os.environ.get(key, "")
+
+GROQ_API_KEY = _get_secret("GROQ_API_KEY")
+ASSEMBLY_AI_API_KEY = _get_secret("ASSEMBLY_AI_API_KEY")
 
 # --- USER AUTHENTICATION ---
 names = ["mukul", "vaddi"]
