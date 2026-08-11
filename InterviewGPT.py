@@ -191,7 +191,7 @@ if authentication_status:
 
                                 chat_completion = await client.chat.completions.create(
                                     messages=messages,
-                                    model="llama3-8b-8192",
+                                    model="llama-3.3-70b-versatile",
                                     temperature=0.5,
                                     max_tokens=300,
                                     stream=False

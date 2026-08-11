@@ -111,7 +111,7 @@ if authentication_status:
                             {"role": "system", "content": "You are a helpful interview assistant. Help the user prepare for their interview by answering questions, giving feedback, and suggesting improvements."},
                             {"role": "user", "content": prompt},
                         ],
-                        model="llama3-8b-8192",
+                        model="llama-3.3-70b-versatile",
                         temperature=0.5,
                         max_tokens=500,
                         stream=False,
@@ -228,7 +228,7 @@ if authentication_status:
                                     ] + list(conversation_history)
                                     chat_completion = await client.chat.completions.create(
                                         messages=messages,
-                                        model="llama3-8b-8192",
+                                        model="llama-3.3-70b-versatile",
                                         temperature=0.5,
                                         max_tokens=300,
                                         stream=False,
